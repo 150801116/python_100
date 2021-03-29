@@ -4,7 +4,7 @@
 print("请输入输入某年某月某日：",end="")
 list = input()
 Year = list.split("年")    #Year=['2020', '3月29日']
-year = int(Year[0])
+year = int(Year[0])    #注意需要强制转换一下，否则切割出来还是str型
 Month = Year[1].split("月")  #Month=['3', '29日']
 month = int(Month[0])
 Day = Month[1].split("日")  #Day=['29', '']
@@ -13,7 +13,7 @@ temp = 0
 # print(year)
 # print(month)
 # print(day)
-list1=[31,28,31,30,31,30,31,31,30,31,30,31]
+list1=[31,28,31,30,31,30,31,31,30,31,30,31]  #平年2月是28天，闰年29天
 if (year%4==0)and(year%100!=0):
     list1[1]=29
 elif year%400==0:
