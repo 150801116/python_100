@@ -6,9 +6,10 @@ def findFactor(n):
     if n<0:
         return
     #考虑到因子是要求完全不重合的可以直接定义成集合
-    res = {1}
-    #res=set()
-    #res.add(1)
+    #字典与集合的区别，字典里可以存放键值对
+    #res = {1}  #这是字典
+    res=set() #这样是集合
+    res.add(1)
     for i in range(2,int(math.sqrt(n))+1):
         if n%i==0:
             res.add(i)
