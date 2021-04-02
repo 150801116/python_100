@@ -5,4 +5,4 @@ len = len(n)
 print(n,"是",len,"位数")
 for i in range(len-1,-1,-1):
     print(n[i],end="")
-#print(n[::-1])  #可以直接逆序输出
+#print(n[::-1])  #可以直接逆序输出！
