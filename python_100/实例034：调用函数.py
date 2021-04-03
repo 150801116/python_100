@@ -2,4 +2,7 @@
 def printHello():
     print("Hello!")
 
-printHello()
+
+#主函数
+if __name__=="__main__":
+    printHello()
