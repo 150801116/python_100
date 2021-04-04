@@ -1,3 +1,4 @@
+
 #题目 画图，学用line画直线。
 from tkinter import *
 
@@ -23,6 +24,5 @@ if __name__=="__main__":
         y0 = y0 + 5
         y1 = y1 + 5
     mainloop()
-
 
 
